@@ -2,11 +2,11 @@
 
 on(){
     OPTION="${1:---left-of}"
-    xrandr --output HDMI1 --auto "$OPTION" LVDS1
+    xrandr --output DP-0 --auto "$OPTION" HDMI-0 --rotate left 
 }
 
 off(){
-    xrandr --output HDMI1 --off
+    xrandr --output DP-0 --off
 }
 
 restore(){
