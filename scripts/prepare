@@ -3,5 +3,5 @@ hhkb;
 sudo dhcpcd enp3s0;  
 rsync;
 nohup ./scripts/status &
-
+hdmi;
 
