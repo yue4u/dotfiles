@@ -52,7 +52,7 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
-xrandr --mode 3440x1440 &
+xrandr --output DP-0 --auto --left-of HDMI-0 --rotate left &
 picom -f &
 dunst &
 ~/.fehbg &
