@@ -26,6 +26,7 @@
 /.config/fcitx/*
 !/.config/fcitx/config
 !/.config/rofi
+!/.config/kritashortcutsrc
 
 
 # git
