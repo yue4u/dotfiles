@@ -50,6 +50,7 @@ export PATH=$HOME/.pub-cache/bin:$PATH
 #n
 export N_PREFIX=$HOME/.n
 export PATH=$N_PREFIX/bin:$PATH
+export NNN_PLUG='f:finder;o:fzopen;p:mocplay;d:diffs;t:nmount;v:imgview'
 # Path to your oh-my-zsh installation.
 
 ZSH=$HOME/.oh-my-zsh
@@ -177,6 +178,7 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 source $ZSH/oh-my-zsh.sh
+source ~/.x
 unalias g
 
 # The next line updates PATH for the Google Cloud SDK.
