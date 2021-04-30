@@ -8,6 +8,7 @@ KritaShape/KisToolBrush=C
 KritaShape/KisToolMultiBrush=none
 KritaTransform/KisToolMove=W
 PanTool=D
+add_new_fill_layer=Shift+F
 copy_selection_to_new_layer=none
 cut_selection_to_new_layer=Ctrl+L
 decrease_brush_size=Z
