@@ -1,0 +1,27 @@
+#!/usr/bin/env -S deno run --allow-env --allow-read --allow-write
+import { readJson, writeJson } from 'https://deno.land/x/jsonfile/mod.ts';
+
+const jsonPath = Deno.env.get("HOME") + "/.local/share/kv/data.json";
+const store = await readJson(jsonPath).catch(()=>({}));
+const [k, v] = Deno.args;
+
+if (!k) {
+    console.log(`USAGE:
+
+kv -l, --list
+kv [key] [value]`);
+    Deno.exit();
+}
+
+if (['-l','--list'].includes(k)) {
+    console.log(store);
+    Deno.exit();
+}
+
+if (v) {
+    store[k] = v;
+    await writeJson(jsonPath, store, { spaces: 2 });
+} else {
+    console.log(store[k]);
+}
+
