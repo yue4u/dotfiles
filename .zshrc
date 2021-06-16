@@ -31,6 +31,7 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$HOME/.local/bin:$PATH
 export PATH=$HOME/.yarn/bin:$PATH
 export PATH=$HOME/scripts:$PATH
+export PATH=$HOME/scripts/private:$PATH
 export PATH=/var/lib/snapd/snap/bin:$PATH
 # go
 export GOPATH=$HOME/go
@@ -126,7 +127,7 @@ export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 export EDITOR='vim'
-export BROWSER='firefox-developer-edition'
+export BROWSER='chromium'
 
 alias grip='_JAVA_AWT_WM_NONREPARENTING=1 datagrip'
 # Compilation flags
