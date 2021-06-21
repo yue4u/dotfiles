@@ -1,0 +1,21 @@
+#!/usr/bin/env -S deno run --allow-env --allow-read --allow-write
+/**
+ * @note
+ *
+ * @see https://stackoverflow.com/a/37238623/11628801
+ * @see https://wiki.archlinux.org/title/Visual_Studio_Code#Command_%22...%22_not_found
+ */
+import { readJson, writeJson } from "https://deno.land/x/jsonfile/mod.ts";
+
+const jsonPath = "/usr/lib/code/product.json";
+const store = await readJson(jsonPath);
+
+store["extensionsGallery"] = {
+  serviceUrl: "https://marketplace.visualstudio.com/_apis/public/gallery",
+  cacheUrl: "https://vscode.blob.core.windows.net/gallery/index",
+  itemUrl: "https://marketplace.visualstudio.com/items",
+};
+
+await writeJson(jsonPath, store, { spaces: 2 });
+
+console.log("done");
