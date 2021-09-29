@@ -49,6 +49,9 @@ export PATH=$ANDROID_HOME/tools:$PATH
 export PATH=$HOME/.flutter-sdk/bin:$PATH
 #dart
 export PATH=$HOME/.pub-cache/bin:$PATH
+#ruby
+export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
+export PATH="$PATH:$GEM_HOME/bin"
 #n
 export N_PREFIX=$HOME/.n
 export PATH=$N_PREFIX/bin:$PATH
@@ -160,6 +163,8 @@ alias py3='python3'
 alias R='R --quiet --no-save --no-restore-data'
 alias c='pbpaste -Prefer txt | pbcopy; pbpaste; echo'
 alias freedom='v2ray --config=/usr/local/etc/v2ray/config.json'
+alias p='pnpm'
+alias pu='pnpm add -g pnpm'
 ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
   mkdir $ZSH_CACHE_DIR
