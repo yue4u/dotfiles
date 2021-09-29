@@ -1,6 +1,7 @@
 #! /usr/bin/env python3
 import json
 import os
+import sys
 
 def update():
     try:
@@ -12,16 +13,17 @@ def update():
 
     dependencies = pkg_json.get('dependencies')
     devDependencies = pkg_json.get('devDependencies')
+    extraArgv = " ".join(sys.argv[1:])
 
     if dependencies:
         pkgs = [*dependencies]
         print("📦update dependencies: ", pkgs)
-        os.system("yarn add " + " ".join(pkgs))
+        os.system(f"yarn add {extraArgv} " + " ".join(pkgs))
 
     if devDependencies:
         pkgs = [*devDependencies]
         print("⚙️update devDependencies: ", pkgs)
-        os.system("yarn add -D " + " ".join(pkgs))
+        os.system(f"yarn add {extraArgv} -D " + " ".join(pkgs))
 
 if __name__ == '__main__':
     update()
