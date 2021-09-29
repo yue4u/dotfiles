@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 on(){
-    OPTION="${1:---left-of}"
-    xrandr --output DP-0 --auto "$OPTION" HDMI-0 --rotate left 
+    OPTION="${1:---right-of}"
+    xrandr --output DP-0 --auto "$OPTION" HDMI-0 --rotate right
 }
 
 off(){
