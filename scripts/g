@@ -1,5 +1,19 @@
 #! /usr/bin/env bash
 
+cyan(){
+    echo "$(tput setaf 6)$1$(tput sgr 0)"
+}
+
+pox(){
+    CURRENT=$(git branch --show-current)
+    if [ $CURRENT == 'master' ]; then
+        echo "$(cyan '`g pox`') is not allowed to push master, use $(cyan '`g pom`')"
+        exit 1
+    else
+        git push origin "$CURRENT" $@
+    fi
+}
+
 case $1 in
     "a") shift; git add $@;;
     "b") shift; git branch $@;;
@@ -11,7 +25,7 @@ case $1 in
     "cb") shift; git checkout -b $@;;
     "db") shift; git branch -d $@;;
     "pom") shift; git push origin master $@;;
-    "pox") shift; git push origin $(git branch --show-current) $@;;
+    "pox") shift; pox;;
     "plx") shift; git pull origin $(git branch --show-current) $@;;
     "dc") git diff --cached;;
     "anyway") g a . && g cm 'update';;
