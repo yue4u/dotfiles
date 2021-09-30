@@ -1,10 +1,10 @@
 bfg
-davinci-resolve
+datagrip
+datagrip-jre
+dropbox
 figma-linux
-geekbench
-lf
-minecraft-launcher
+libxft-bgra
 rslsync
 slack-desktop
-visual-studio-code-insiders-bin
+snapd
 zoom
