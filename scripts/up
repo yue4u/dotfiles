@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+aws s3 cp $1 "$AWS_S3_UP_BUCKET/$(basename $1)" "${@:2}"
