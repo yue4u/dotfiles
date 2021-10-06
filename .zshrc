@@ -1,3 +1,4 @@
+export GPG_TTY=$(tty)
 ZSH_DISABLE_COMPFIX=true
 
 case "$(uname -s)" in
