@@ -1,5 +1,4 @@
 sudo echo;
 hhkb;
-sudo dhcpcd enp3s0;  
 nohup ./scripts/status &
 
