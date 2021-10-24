@@ -22,9 +22,9 @@
 !/.config/alacritty
 !/.config/picom
 !/.config/dunst
-!/.config/fcitx
-/.config/fcitx/*
-!/.config/fcitx/config
+!/.config/fcitx5
+/.config/fcitx5/*
+!/.config/fcitx5/config
 !/.config/rofi
 !/.config/kritashortcutsrc
 
