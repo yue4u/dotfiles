@@ -56,6 +56,6 @@ xrandr --output DP-0 --auto --right-of HDMI-0 --rotate right &
 picom -f &
 dunst &
 ~/.fehbg &
-fcitx &
+fcitx5 -d -r &
+~/scripts/hhkb;
 exec dwm
-

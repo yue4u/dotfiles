@@ -5,8 +5,8 @@
 - Window Manager: `dwm`
 - Terminal Emulator: `kitty`
 - Shell: `zsh`
-- Text Editor: `vim`
+- Text Editor: `vscode` / `vim`
 - File Manager: `ranger`
-- Web Browser: `chromium`
-- Input Method: `fcitx`
+- Web Browser: `firefox-developer-edition` / `chromium`
+- Input Method: `fcitx5`
 - Compositor: `picom`
