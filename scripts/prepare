@@ -1,4 +1,0 @@
-sudo echo;
-hhkb;
-nohup ./scripts/status &
-
