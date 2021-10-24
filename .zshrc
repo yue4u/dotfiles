@@ -119,7 +119,7 @@ DISABLE_AUTO_UPDATE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git k)
 
 
 # User configuration
@@ -195,3 +195,5 @@ if [ -f '/home/yue/.aur/google-cloud-sdk/path.zsh.inc' ]; then . '/home/yue/.aur
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/yue/.aur/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/yue/.aur/google-cloud-sdk/completion.zsh.inc'; fi
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
