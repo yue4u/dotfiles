@@ -25,7 +25,7 @@ case $1 in
     "cb") shift; git checkout -b $@;;
     "db") shift; git branch -d $@;;
     "pom") shift; git push origin master $@;;
-    "pox") shift; pox;;
+    "pox") shift; pox $@;;
     "plx") shift; git pull origin $(git branch --show-current) $@;;
     "dc") git diff --cached;;
     "idc") g a . && g cm 'update';;
