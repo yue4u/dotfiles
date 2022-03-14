@@ -160,6 +160,7 @@ alias please='sudo'
 alias plz='sudo'
 # alias ls='ls | lolcat'
 alias cat='bat'
+alias icat="kitty +kitten icat"
 alias cr='crystal'
 alias py='python'
 alias py3='python3'
