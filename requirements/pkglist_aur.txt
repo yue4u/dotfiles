@@ -4,6 +4,9 @@ datagrip-jre
 dropbox
 figma-linux
 libxft-bgra
+ncurses5-compat-libs
+python2-pip
+python2-virtualenv
 rslsync
 slack-desktop
 snapd
