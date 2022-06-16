@@ -48,6 +48,7 @@ fcitx5-mozc
 fcitx5-pinyin-zhwiki
 fcitx5-qt
 fcitx5-rime
+fd
 feh
 file
 findutils
@@ -66,6 +67,7 @@ github-cli
 go
 go-ipfs
 godot
+graphviz
 grep
 groff
 grub
@@ -84,8 +86,10 @@ krita
 libappindicator-gtk3
 libtool
 libvips
+libxcrypt-compat
 linux
 linux-firmware
+linux-headers
 lld
 llvm
 lsof
@@ -96,6 +100,7 @@ mandoc
 mariadb
 mesa
 mesa-demos
+minikube
 mkcert
 mono
 mono-msbuild
@@ -163,6 +168,7 @@ ttf-sazanami
 udisks2
 unzip
 v2ray
+v4l2loopback-dkms
 vi
 vim
 vlc

@@ -2,9 +2,10 @@ bfg
 datagrip
 datagrip-jre
 dropbox
-figma-linux
+google-cloud-sdk
 libxft-bgra
 ncurses5-compat-libs
+python-pylspci
 python2-pip
 python2-virtualenv
 rslsync
