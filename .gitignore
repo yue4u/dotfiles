@@ -13,6 +13,8 @@
 !.zshrc
 !.zprofile
 !.zsh_custom
+.zsh_custom
+!.zsh_custom/theme
 # some config files
 !/.config
 /.config/*
@@ -31,7 +33,6 @@
 
 # git
 !.gitignore
-!.gitconfig
 
 # WM
 !.Xresources
