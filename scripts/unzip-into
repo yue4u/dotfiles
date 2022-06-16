@@ -1,1 +1,8 @@
-for f in `ls -1 *.zip`; do unzip $f -d `basename $f .zip`; done
+#!/usr/bin/env zx
+const [filename] = process.argv.slice(3);
+
+await unzipInto(filename);
+
+async function unzipInto(file) {
+  await $`unzip ${file} -d ${file.replace(/\.zip$/, "")}`;
+}
