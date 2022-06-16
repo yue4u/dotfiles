@@ -153,6 +153,7 @@ alias grip='_JAVA_AWT_WM_NONREPARENTING=1 datagrip'
 alias svim='sudo vim'
 alias mkcd='foo(){mkdir -p "$1"; cd "$1"};foo '
 alias sass!='sass --watch scss:css --style compressed'
+alias kubectl="minikube kubectl --"
 alias wifi-menu='sudo wifi-menu'
 alias pacman='sudo pacman'
 alias dc='docker-compose'
@@ -194,9 +195,8 @@ source ~/.x
 unalias g
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/home/yue/.aur/google-cloud-sdk/path.zsh.inc' ]; then . '/home/yue/.aur/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '/etc/profile.d/google-cloud-sdk.sh' ]; then . '/etc/profile.d/google-cloud-sdk.sh'; fi
 
-# The next line enables shell command completion for gcloud.
-if [ -f '/home/yue/.aur/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/yue/.aur/google-cloud-sdk/completion.zsh.inc'; fi
+
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
