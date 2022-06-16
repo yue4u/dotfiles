@@ -38,10 +38,6 @@
 !.Xresources
 !.xinitrc
 
-# vim
-!/.vim
-!.vimrc
-
 # scripts
 !/scripts
 /scripts/private
