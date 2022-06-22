@@ -16,6 +16,8 @@ store["extensionsGallery"] = {
   itemUrl: "https://marketplace.visualstudio.com/items",
 };
 
+store["GitHub.copilot"] = ["inlineCompletions", "inlineCompletionsNew", "inlineCompletionsAdditions", "textDocumentNotebook"]
+
 await writeJson(jsonPath, store, { spaces: 2 });
 
 console.log("done");
