@@ -18,6 +18,7 @@ case $1 in
     "a") shift; git add $@;;
     "b") shift; git branch $@;;
     "c") shift; git checkout $@;;
+    "d") shift; git diff $@;;
     "m") shift; git merge $@;;
     "s") shift; git status $@;;
     "x") shift; git branch --show-current $@;;
