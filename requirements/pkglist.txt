@@ -57,6 +57,7 @@ firefox-developer-edition
 flameshot
 flatpak
 flex
+fzf
 gawk
 gcc
 gettext
@@ -65,7 +66,6 @@ git-filter-repo
 git-lfs
 github-cli
 go
-go-ipfs
 godot
 graphviz
 grep
@@ -76,6 +76,7 @@ gzip
 hdparm
 hexyl
 htop
+hyperfine
 i3-gaps
 java-runtime-common
 jdk-openjdk
@@ -83,6 +84,7 @@ jq
 jre-openjdk
 kitty
 krita
+kubo
 libappindicator-gtk3
 libtool
 libvips
@@ -151,6 +153,7 @@ scrot
 sdparm
 sed
 simplescreenrecorder
+steam
 sudo
 tailscale
 telegram-desktop
@@ -171,6 +174,8 @@ v2ray
 v4l2loopback-dkms
 vi
 vim
+vivaldi
+vivaldi-ffmpeg-codecs
 vlc
 wget
 which
@@ -190,4 +195,5 @@ yarn
 youtube-dl
 zig
 zip
+zoxide
 zsh
