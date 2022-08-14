@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-curl -X PUT "https://api.cloudflare.com/client/v4/accounts/$CF_ACCOUNT_ID/access/groups/$CF_GROUP_ID" \
-     -H "X-Auth-Email: $CF_API_EMAIL" \
-     -H "X-Auth-Key: $CF_API_KEY" \
-     -H "Content-Type: application/json" \
-     -s \
-     --data "{\"name\":\"Home\",\"include\":[{\"ip\":{\"ip\": \"$(curl -s https://ipecho.net/plain)/32\"}}],\"exclude\":[],\"require\":[]}" \
-| jq "{ip: .result.include | .[0].ip.ip, success: .success,errors: .errors}"
