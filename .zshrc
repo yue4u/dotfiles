@@ -175,6 +175,8 @@ if [[ ! -d $ZSH_CACHE_DIR ]]; then
   mkdir $ZSH_CACHE_DIR
 fi
 
+eval "$(zoxide init zsh)"
+
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/home/yue/.anaconda/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
