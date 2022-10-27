@@ -29,11 +29,14 @@ dhcpcd
 dialog
 discord
 dmenu
+dnsmasq
 docker
+docker-buildx
 docker-compose
 dotnet-runtime
 dotnet-sdk
 dunst
+dust
 efibootmgr
 emscripten
 exa
@@ -52,6 +55,7 @@ fd
 feh
 file
 findutils
+fio
 firefox
 firefox-developer-edition
 flameshot
@@ -88,6 +92,7 @@ kubo
 libappindicator-gtk3
 libtool
 libvips
+libvirt
 libxcrypt-compat
 linux
 linux-firmware
@@ -115,6 +120,7 @@ nitrogen
 nnn
 noto-fonts
 noto-fonts-emoji
+nushell
 nvidia
 nvidia-settings
 obs-studio
@@ -141,11 +147,13 @@ pulseaudio-alsa
 pulseaudio-jack
 pyenv
 python-pip
-python2
+qbittorrent
+qemu-base
 rclone
 redis
 reflector
 rsync
+rtorrent
 ruby
 s3fs-fuse
 scrcpy
@@ -153,6 +161,7 @@ scrot
 sdparm
 sed
 simplescreenrecorder
+smartmontools
 steam
 sudo
 tailscale
@@ -174,9 +183,12 @@ v2ray
 v4l2loopback-dkms
 vi
 vim
+virt-manager
+virt-viewer
 vivaldi
 vivaldi-ffmpeg-codecs
 vlc
+wabt
 wget
 which
 wpa_supplicant

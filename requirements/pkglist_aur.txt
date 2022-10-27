@@ -3,11 +3,14 @@ datagrip
 datagrip-jre
 dropbox
 google-cloud-sdk
+jetbrains-toolbox
 libxft-bgra
 ncurses5-compat-libs
 python-pylspci
+python2
 python2-pip
 python2-virtualenv
+rpi-imager-bin
 rslsync
 slack-desktop
 snapd
