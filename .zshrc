@@ -167,7 +167,7 @@ alias py='python'
 alias py3='python3'
 alias R='R --quiet --no-save --no-restore-data'
 alias c='pbpaste -Prefer txt | pbcopy; pbpaste; echo'
-alias freedom='v2ray --config=/usr/local/etc/v2ray/config.json'
+alias freedom='v2ray run -c /usr/local/etc/v2ray/config.json'
 alias p='pnpm'
 alias pu='pnpm add -g pnpm'
 ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
@@ -179,14 +179,14 @@ eval "$(zoxide init zsh)"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/yue/.anaconda/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+__conda_setup="$('/home/yue/.anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/home/yue/.anaconda/etc/profile.d/conda.sh" ]; then
-        . "/home/yue/.anaconda/etc/profile.d/conda.sh"
+    if [ -f "/home/yue/.anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/yue/.anaconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/home/yue/.anaconda/bin:$PATH"
+        export PATH="/home/yue/.anaconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
@@ -202,3 +202,20 @@ if [ -f '/etc/profile.d/google-cloud-sdk.sh' ]; then . '/etc/profile.d/google-cl
 
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
+
+# pnpm
+export PNPM_HOME="/home/yue/.local/share/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
+export WASMTIME_HOME="$HOME/.wasmtime"
+
+export PATH="$WASMTIME_HOME/bin:$PATH"
+
+STATUS_HINT="/tmp/.yue.status"
+if [ ! -f "$STATUS_HINT" ]; then
+  nohup ./scripts/status &> /dev/null &
+  date +%s > "$STATUS_HINT"
+fi
+
+# Added by Toolbox App
+export PATH="$PATH:/home/yue/.local/share/JetBrains/Toolbox/scripts"
