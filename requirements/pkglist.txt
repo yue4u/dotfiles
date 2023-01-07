@@ -5,6 +5,7 @@ alacritty
 alsa-utils
 android-tools
 appmenu-gtk-module
+asciinema
 autoconf
 autoconf2.13
 automake
@@ -23,7 +24,9 @@ clinfo
 cmake
 cmatrix
 code
+cowsay
 cpio
+crystal
 deno
 dhcpcd
 dialog
@@ -99,6 +102,7 @@ linux-firmware
 linux-headers
 lld
 llvm
+lolcat
 lsof
 lucky-commit
 m4
@@ -160,12 +164,15 @@ scrcpy
 scrot
 sdparm
 sed
+shards
 simplescreenrecorder
 smartmontools
 steam
 sudo
+swig
 tailscale
 telegram-desktop
+terraform
 texinfo
 texlive-fontsextra
 tor
@@ -205,6 +212,7 @@ xorg-xsetroot
 xterm
 yarn
 youtube-dl
+yubikey-manager
 zig
 zip
 zoxide

@@ -1,8 +1,19 @@
-cargo-watch v7.5.0:
+cargo-edit v0.11.6:
+    cargo-add
+    cargo-rm
+    cargo-set-version
+    cargo-upgrade
+cargo-generate v0.10.3:
+    cargo-generate
+cargo-udeps v0.1.35:
+    cargo-udeps
+cargo-watch v7.8.1:
     cargo-watch
-diesel_cli v1.4.1:
-    diesel
-hololive v0.1.2:
-    hololive
+htmlq v0.4.0:
+    htmlq
+oxipng v4.0.3:
+    oxipng
 tmt v0.1.2:
     tmt
+zellij v0.30.0:
+    zellij

@@ -3,8 +3,8 @@
 arch() {
     pacman -Qqen > requirements/pkglist.txt
     pacman -Qqem > requirements/pkglist_aur.txt
-    # I want to filter local installed ones...
-    # cargo install --list > requirements/cargo_install_list.txt
+    cargo install --list | rg -v rust-analyzer > requirements/cargo_install_list.txt
+    code --list-extensions > requirements/vscode-extensions.txt
 }
 
 mac() {
