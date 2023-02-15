@@ -1,0 +1,10 @@
+#! /usr/bin/env bash
+
+__NAME=`basename $1 .mp4`
+__TMP_MP4="$__NAME.tmp.mp4"
+__TMP_Y4M="$__NAME.y4m"
+ffmpeg -i $1 -vf scale=1080:-2 -vcodec libx265 -crf 28 $__TMP_MP4
+ffmpeg -i $__TMP_MP4 $__TMP_Y4M
+avifenc -j all $__TMP_Y4M "$__NAME.avif"
+# rm $__TMP_MP4
+rm $__TMP_Y4M
