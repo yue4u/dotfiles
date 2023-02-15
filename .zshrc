@@ -54,7 +54,9 @@ export PATH=$HOME/.pub-cache/bin:$PATH
 export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
 export PATH="$PATH:$GEM_HOME/bin"
 # Add .NET Core SDK tools
-export PATH="$PATH:/home/yue/.dotnet/tools"
+export PATH="$PATH:$HOME/.dotnet/tools"
+# scala
+export PATH="$PATH:$HOME/.local/share/coursier/bin"
 #n
 export N_PREFIX=$HOME/.n
 export PATH=$N_PREFIX/bin:$PATH
