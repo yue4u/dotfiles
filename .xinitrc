@@ -37,7 +37,7 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
-xrandr --output DP-2 --auto --right-of HDMI-0 --rotate left &
+xrandr --output DP-1 --primary --mode 3440x1440 --pos 0x0 --output DP-2 --mode 1920x1080 --right-of DP-1 --rotate left --output HDMI-0 --pos 0x1440
 picom -f &
 dunst &
 fcitx5 -d -r &
