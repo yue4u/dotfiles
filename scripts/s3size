@@ -1,0 +1,5 @@
+bucketlist=`aws s3 ls | cut -d ' ' -f 3`
+echo -e "Bucket\tObjectCount\tTotalSize\n"
+for x in ${bucketlist}; do
+    echo -en "$x\t"; aws s3 ls s3://$x --recursive | grep -v -E "(Bucket: |Prefix: |LastWriteTime|^$|--)" | awk 'BEGIN {count=0; total=0}{count++; total+=$3}END{print count"\t"total" ("total/2^30"GB)\t$"(total/2^30)*0.023}'
+done
