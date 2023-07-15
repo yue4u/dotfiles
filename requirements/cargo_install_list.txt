@@ -5,6 +5,10 @@ cargo-edit v0.11.6:
     cargo-upgrade
 cargo-generate v0.10.3:
     cargo-generate
+cargo-license v0.5.1:
+    cargo-license
+cargo-patch v0.3.0:
+    cargo-patch
 cargo-udeps v0.1.35:
     cargo-udeps
 cargo-watch v7.8.1:

@@ -84,7 +84,7 @@ hdparm
 hexyl
 htop
 hyperfine
-i3-gaps
+i3-wm
 java-runtime-common
 jdk-openjdk
 jq
@@ -109,12 +109,14 @@ m4
 make
 mandoc
 mariadb
+maven
 mesa
 mesa-demos
 minikube
 mkcert
 mono
 mono-msbuild
+mplayer
 mpv
 musl
 nano
@@ -165,7 +167,6 @@ scrot
 sdparm
 sed
 shards
-simplescreenrecorder
 smartmontools
 steam
 sudo
@@ -185,6 +186,7 @@ ttf-hanazono
 ttf-jetbrains-mono
 ttf-sazanami
 udisks2
+unrar
 unzip
 v2ray
 v4l2loopback-dkms
@@ -211,7 +213,7 @@ xorg-xrandr
 xorg-xsetroot
 xterm
 yarn
-youtube-dl
+yt-dlp
 yubikey-manager
 zig
 zip

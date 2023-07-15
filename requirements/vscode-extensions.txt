@@ -27,6 +27,7 @@ iliazeus.vscode-ansi
 jeff-hykin.polacode-2019
 jpoissonnier.vscode-styled-components
 kdl-org.kdl
+Malo.copy-json-path
 marp-team.marp-vscode
 mkxml.vscode-filesize
 ms-dotnettools.csharp
@@ -46,6 +47,7 @@ ms-vscode.remote-explorer
 muhammad-sammy.csharp
 Prisma.prisma
 redhat.java
+redhat.vscode-xml
 rust-lang.rust-analyzer
 slevesque.shader
 streetsidesoftware.code-spell-checker
