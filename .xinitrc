@@ -42,5 +42,6 @@ picom -f &
 dunst &
 fcitx5 -d -r &
 ~/.fehbg &
+~/scripts/private/setwall startup
 ~/scripts/hhkb;
 exec dwm
