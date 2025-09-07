@@ -123,7 +123,7 @@ DISABLE_AUTO_UPDATE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git k)
+plugins=(git k poetry)
 
 
 # User configuration
@@ -171,7 +171,7 @@ alias R='R --quiet --no-save --no-restore-data'
 alias c='pbpaste -Prefer txt | pbcopy; pbpaste; echo'
 alias freedom='v2ray run -c /usr/local/etc/v2ray/config.json'
 alias p='pnpm'
-alias pu='pnpm add -g pnpm'
+alias pu='pnpm self-update'
 ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
   mkdir $ZSH_CACHE_DIR
@@ -198,9 +198,6 @@ source $ZSH/oh-my-zsh.sh
 source ~/.x
 unalias g
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/etc/profile.d/google-cloud-sdk.sh' ]; then . '/etc/profile.d/google-cloud-sdk.sh'; fi
-
 
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
@@ -221,3 +218,12 @@ fi
 
 # Added by Toolbox App
 export PATH="$PATH:/home/yue/.local/share/JetBrains/Toolbox/scripts"
+export PATH="/home/yue/.moon/bin:$PATH"
+
+export PATH="/home/yue/.mozbuild/git-cinnabar:$PATH"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/yue/google-cloud-sdk/path.zsh.inc' ]; then . '/home/yue/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/yue/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/yue/google-cloud-sdk/completion.zsh.inc'; fi
