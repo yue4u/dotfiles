@@ -123,7 +123,7 @@ DISABLE_AUTO_UPDATE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git k poetry)
+plugins=(git poetry)
 
 
 # User configuration
@@ -155,7 +155,9 @@ alias grip='_JAVA_AWT_WM_NONREPARENTING=1 datagrip'
 alias svim='sudo vim'
 alias mkcd='foo(){mkdir -p "$1"; cd "$1"};foo '
 alias sass!='sass --watch scss:css --style compressed'
-alias kubectl="minikube kubectl --"
+#alias kubectl="minikube kubectl --"
+alias k='kubectl'
+export PATH=$HOME/.istioctl/bin:$PATH
 alias wifi-menu='sudo wifi-menu'
 alias pacman='sudo pacman'
 alias dc='docker-compose'
